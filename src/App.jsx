@@ -16,7 +16,7 @@ import CarListPage from "./pages/customer/CarListPage";
 import CarDetailPage from "./pages/customer/CarDetailPage";
 import LoginPage from "./pages/auth/LoginPage";
 import RegisterPage from "./pages/auth/RegisterPage";
-
+import AuthSuccess from "./pages/auth/AuthSuccess";
 import VerifyEmailPage from "./pages/auth/VerifyEmailPage";
 import VerifyEmailPending from "./pages/auth/VerifyEmailPending";
 import VerificationPendingPage from "./pages/auth/VerificationPendingPage";
@@ -90,6 +90,7 @@ function App() {
             <Route path="/cars" element={<CarListPage />} />
             <Route path="/cars/:id" element={<CarDetailPage />} />
             <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+            <Route path="/auth-success" element={<AuthSuccess />} />
             <Route
               path="/reset-password/:token"
               element={<ResetPasswordPage />}
