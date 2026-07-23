@@ -1,20 +1,8 @@
 import { createApi, fetchBaseQuery, retry } from "@reduxjs/toolkit/query/react";
 
-const getTokenFromCookies = () => {
-  const match = document.cookie.match(/token=([^;]+)/);
-  return match ? match[1] : null;
-};
-
 const baseQuery = fetchBaseQuery({
   baseUrl: import.meta.env.VITE_API_URL || "/api/v1",
-  credentials: "include",
-  prepareHeaders: (headers) => {
-    const token = getTokenFromCookies();
-    if (token) {
-      headers.set("Authorization", `Bearer ${token}`);
-    }
-    return headers;
-  },
+  credentials: "include", // sends cookies automatically
 });
 
 const customBaseQuery = retry(
@@ -133,7 +121,6 @@ export const apiSlice = createApi({
       }),
       invalidatesTags: ["User"],
     }),
-    // ─── VERIFICATION ──────────────────────────────────────
     submitVerification: builder.mutation({
       query: () => ({
         url: "/auth/submit-verification",
@@ -397,7 +384,6 @@ export const apiSlice = createApi({
       keepUnusedDataFor: 600,
       refetchOnMountOrArgChange: false,
     }),
-    // ─── ADMIN VERIFICATIONS ──────────────────────────────
     getPendingVerifications: builder.query({
       query: () => "/admin/verifications/pending",
       providesTags: ["User"],
@@ -445,7 +431,7 @@ export const apiSlice = createApi({
 export const {
   // Auth
   useGetMeQuery,
-  useLazyGetMeQuery, // ✅ added
+  useLazyGetMeQuery,
   useRegisterMutation,
   useLoginMutation,
   useLogoutMutation,
@@ -503,11 +489,11 @@ export const {
 
   // Admin
   useGetUsersQuery,
-  useGetUserDetailsQuery, // ✅ added
+  useGetUserDetailsQuery,
   useUpdateUserRoleMutation,
   useToggleUserActiveMutation,
   useGetUserBookingsQuery,
-  useGetCarBookingsQuery, // ✅ added
+  useGetCarBookingsQuery,
   useGetAllBookingsQuery,
   useGetBookedCarsQuery,
   useGetRevenueReportQuery,
