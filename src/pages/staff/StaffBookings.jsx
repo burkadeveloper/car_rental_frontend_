@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Spinner from "../../components/common/Spinner";
@@ -101,7 +100,6 @@ const StaffBookings = () => {
 };
 
 export default StaffBookings;
-=======
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Spinner from "../../components/common/Spinner";
@@ -204,4 +202,3 @@ const StaffBookings = () => {
 };
 
 export default StaffBookings;
->>>>>>> e32ece4e9c0f3570c3b3d9af4dbf9fb821cfd845

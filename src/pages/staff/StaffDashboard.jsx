@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Spinner from "../../components/common/Spinner";
@@ -38,7 +37,6 @@ const StaffDashboard = () => {
 };
 
 export default StaffDashboard;
-=======
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Spinner from "../../components/common/Spinner";
@@ -78,4 +76,3 @@ const StaffDashboard = () => {
 };
 
 export default StaffDashboard;
->>>>>>> e32ece4e9c0f3570c3b3d9af4dbf9fb821cfd845

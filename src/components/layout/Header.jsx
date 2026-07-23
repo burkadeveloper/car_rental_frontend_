@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -382,7 +381,6 @@ const Header = () => {
 };
 
 export default Header;
-=======
 import React, { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useDispatch } from "react-redux";
@@ -766,4 +764,3 @@ const Header = () => {
 };
 
 export default Header;
->>>>>>> e32ece4e9c0f3570c3b3d9af4dbf9fb821cfd845

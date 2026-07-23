@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useTranslation } from "react-i18next";
@@ -107,7 +106,6 @@ const NotificationBell = () => {
 };
 
 export default NotificationBell;
-=======
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useTranslation } from "react-i18next";
@@ -216,4 +214,3 @@ const NotificationBell = () => {
 };
 
 export default NotificationBell;
->>>>>>> e32ece4e9c0f3570c3b3d9af4dbf9fb821cfd845

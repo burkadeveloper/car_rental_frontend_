@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import {
@@ -160,7 +159,6 @@ const CouponFormModal = ({ isOpen, onClose, coupon }) => {
 };
 
 export default CouponFormModal;
-=======
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import {
@@ -322,4 +320,3 @@ const CouponFormModal = ({ isOpen, onClose, coupon }) => {
 };
 
 export default CouponFormModal;
->>>>>>> e32ece4e9c0f3570c3b3d9af4dbf9fb821cfd845

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -146,7 +145,6 @@ const Footer = () => {
 };
 
 export default Footer;
-=======
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -294,4 +292,3 @@ const Footer = () => {
 };
 
 export default Footer;
->>>>>>> e32ece4e9c0f3570c3b3d9af4dbf9fb821cfd845

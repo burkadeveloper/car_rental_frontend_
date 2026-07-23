@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useEffect, useRef } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
@@ -88,7 +87,6 @@ const MapComponent = ({
 };
 
 export default MapComponent;
-=======
 import React, { useEffect, useRef } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";
@@ -178,4 +176,3 @@ const MapComponent = ({
 };
 
 export default MapComponent;
->>>>>>> e32ece4e9c0f3570c3b3d9af4dbf9fb821cfd845
