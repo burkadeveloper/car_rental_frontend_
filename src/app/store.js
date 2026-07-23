@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { configureStore } from "@reduxjs/toolkit";
 import authReducer from "../features/auth/authSlice";
 import carReducer from "../features/cars/carSlice";
@@ -15,3 +16,22 @@ export const store = configureStore({
   },
   middleware: (getDefault) => getDefault().concat(apiSlice.middleware),
 });
+=======
+import { configureStore } from "@reduxjs/toolkit";
+import authReducer from "../features/auth/authSlice";
+import carReducer from "../features/cars/carSlice";
+import bookingReducer from "../features/bookings/bookingSlice";
+import notificationReducer from "../features/notifications/notificationSlice";
+import { apiSlice } from "../api/apiSlice";
+
+export const store = configureStore({
+  reducer: {
+    auth: authReducer,
+    cars: carReducer,
+    bookings: bookingReducer,
+    notifications: notificationReducer,
+    [apiSlice.reducerPath]: apiSlice.reducer,
+  },
+  middleware: (getDefault) => getDefault().concat(apiSlice.middleware),
+});
+>>>>>>> e32ece4e9c0f3570c3b3d9af4dbf9fb821cfd845
